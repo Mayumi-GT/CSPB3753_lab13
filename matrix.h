@@ -5,8 +5,10 @@
 // Date: Nov 21, 2024
 // Editted: Nov 21, 2024
 ///////////////////////////////////////////////////////////////////////////////
-// Description: Provides matrix allocation, deallocation, and multiplication functions.
-// Purpose: To manage matrix operations required for the Markov chain computations.
+// Description: Provides matrix allocation, deallocation, and multiplication 
+//             functions.
+// Purpose: To manage matrix operations required for the Markov chain
+//            computations.
 ///////////////////////////////////////////////////////////////////////////////
 
 #ifndef MATRIX_H

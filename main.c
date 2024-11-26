@@ -5,8 +5,10 @@
 // Date: Nov 21, 2024
 // Editted: Nov 21, 2024
 ///////////////////////////////////////////////////////////////////////////////
-// Description: this is an entry point for the Predictive Paging Algorithm program.
-// Purpose: Reads page sequence, constructs the Markov chain, predicts future pages.
+// Description: this is an entry point for the Predictive Paging Algorithm
+//              program.
+// Purpose: Reads page sequence, constructs the Markov chain, predicts future
+//         pages.
 ///////////////////////////////////////////////////////////////////////////////
 
 
@@ -16,7 +18,7 @@
 #include "markov.h"
 #include "error_handling.h"
 
-#define NUM_PAGES 10  
+#define NUM_PAGES 5  // initial setting based on the number of pages
 #define K_STEPS 2    // Number of steps ahead to predict
 
 int main(int argc, char *argv[]) {

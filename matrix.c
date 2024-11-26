@@ -56,3 +56,35 @@ void free_double_matrix(double **matrix, int N) {
     }
     free(matrix);
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// multiply_matrices
+// Description: multiplies two square matrices A and B, stores the result in
+// 'result'. A and B are both input matrix with double **. The matrix where 
+// the result will be stored (double **). N is the size of the matrices 
+// (they are N x N).
+// Returns: void
+// Error Processing: if any matrix pointer is NULL, it calls handle_error.
+// Side Effects: modifies the contents of the 'result' matrix.
+///////////////////////////////////////////////////////////////////////////////
+void multiply_matrices(double **A, double **B, double **result, int N) {
+    if (A == NULL || B == NULL || result == NULL) {
+        handle_error("Null pointer passed to multiply_matrices.");
+    }
+
+    // Initialize result matrix to zero
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            result[i][j] = 0.0;
+        }
+    }
+
+    // Multiply A and B
+    for (int i = 0; i < N; i++) {
+        for (int k = 0; k < N; k++) {
+            for (int j = 0; j < N; j++) {
+                result[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+}

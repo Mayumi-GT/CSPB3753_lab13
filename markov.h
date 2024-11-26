@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////////////////
+// markov.h
+///////////////////////////////////////////////////////////////////////////////
+// Author:  Mayumi Shimobe
+// Date: Nov 26, 2024
+///////////////////////////////////////////////////////////////////////////////
+// Description: Provides functions related to Markov chain computations for 
+//              predictive paging. 
+///////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef MARKOV_H
+#define MARKOV_H
+
+void read_page_sequence(const char *filename, int **C, int N);
+void compute_transition_matrix(int **C, double **M, int N);
+void compute_matrix_power(double **M, double **M_power, int k, int N);
+void predict_pages(double **M_power, int current_page, int N);
+
+#endif
