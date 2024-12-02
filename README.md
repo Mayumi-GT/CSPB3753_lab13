@@ -1,4 +1,3 @@
-# CSPB 3753: Operation Systems
 # Lab 13 "Markov Chains: Predictive Paging Algorithm"
 ## Date: Nov 21, 2024
 ## Name: Mayumi Shimobe
