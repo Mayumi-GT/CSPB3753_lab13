@@ -3,7 +3,7 @@
 # Author: Mayumi Shimobe
 # Date: November 26, 2024
 # Description: Compile the predictive paging program and manage build targets.
-# Note: 
+# Note: whole description of this assignment is on README file.
 ###############################################################################
 
 all: predictive_paging
